@@ -1,0 +1,71 @@
+/*Font*/
+@font-face {
+  font-family: "Sample Font";
+  src: url("../Fonts/SampleFont.ttf");
+}
+
+/*Basic Style*/
+* {
+  margin : 0;
+  padding : 0;
+}
+
+p {
+  font-family: "Sample Font";
+  text-indent : 1em;
+  line-height : 1.8em;
+  text-align : justify;
+}
+
+/*Default Text Style*/
+
+sub {
+	vertical-align : baseline;
+	font-size : 0.8em;
+}
+
+sup {
+	vertical-align : baseline;
+}
+
+/***************/
+/*Chapter Title*/
+/***************/
+
+
+/*Background Chapter Title*/
+/* HTML Code :   
+<div class="bg_ch_no_bg">
+<p class="bg_ch_no">• 3 •</p>
+</div> */
+
+.bg_ch_no_bg {
+	background-image : url("../Images/co_no_bg.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width : 115px;
+	height : 110px;
+	margin : auto;
+	display : box;
+}
+
+.bg_ch_no {
+  font-family: "Sample Font";
+	font-weight : bold;
+	font-size : 15px;
+
+	width: 100%;
+	height : 100%;
+	text-indent : 0;
+	text-align : center;
+
+	display: box;
+	box-orient: horizontal;
+	box-pack: center;
+	box-align: center;
+
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
