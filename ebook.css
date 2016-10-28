@@ -1,31 +1,86 @@
+/***************/
+/*Default Style*/
+/***************/
+
+
 /*Font*/
+/*사용 전에 반드시 바꿔야 합니다. 
+폰트를 여러개 등록하려면 복사 후 폰트 이름과 경로를 수정해 사용하세요.*/
 @font-face {
-  font-family: "Sample Font";
-  src: url("../Fonts/SampleFont.ttf");
+  font-family: "Sample Font";  /*사용할 폰트 이름을 적어주세요. 폰트 이름은 본인이 기억하기 쉽게 임의로 지정하면 됩니다.*/
+  src: url("../Fonts/SampleFont.ttf"); /*사용할 폰트의 경로를 적어주세요.*/
 }
 
 /*Basic Style*/
 * {
-  margin : 0;
-  padding : 0;
+	margin : 0;
+	padding : 0;
 }
 
 p {
-  font-family: "Sample Font";
-  text-indent : 1em;
-  line-height : 1.8em;
-  text-align : justify;
+	font-family: "Sample Font"; /*실제 사용하는 폰트 이름으로 바꾼 후 사용하세요*/
+	text-indent : 1em; /*들여쓰기입니다. 들여쓰기를 원하는 만큼 숫자를 수정하세요. 1em은 글자 하나의 폭입니다.*/
+	line-height : 1.8em; /*줄간격입니다. 원하는 간격으로 숫자를 수정해 사용하면 됩니다.*/
+	text-align : justify; /*양쪽 정렬입니다. 왼쪽(left), 오른쪽(right), 가운데(center), 양쪽(justify)으로 수정할 수 있습니다.*/
+	word-spacing : normal; /*단어 간격을 조절하고 싶을 때 사용하세요. 1em, 1px 등을 사용할 수 있습니다.*/
+	letter-spacing : normal; /*글자 간격을 조절하고 싶을 때 사용하세요. 1em, 1px 등을 사용할 수 있습니다.*/
+	
 }
 
+/********************/
 /*Default Text Style*/
+/********************/
 
-sub {
-	vertical-align : baseline;
+/* 첨자형 설명 */
+sub {   /*아랫첨자 형태의 설명을 넣을 때 사용할 수있습니다.*/
+	vertical-align : baseline; /*10% 처럼 숫자를 사용할 수 있습니다. 숫자를 조절하면 세로 위 아래로 위치를 변경할 수 있습니다.*/
 	font-size : 0.8em;
 }
 
-sup {
+sup {   /*윗첨자 형태의 설명을 넣을 때 사용할 수있습니다.*/
+	vertical-align: 20%; /*숫자를 조절하면 세로 위 아래로 위치를 변경할 수 있습니다.*/
+	font-size : 0.8em;
+}
+
+/*글자 왼쪽, 가운데, 오른쪽 정렬*/
+/* HTML Code : 
+<p class="txt_center">text</p> */
+.txt_center { /*가운데 정렬 스타일*/
+	text-align : center;
+	text-indent : 0;
+}
+
+.txt_right { /*오른 정렬 스타일*/
+	text-align : right;
+}
+
+.txt_left { /*왼쪽 정렬 스타일*/
+	text-align : left;
+	text-indent : 0;
+}
+
+/*기타 글자를 꾸미는 스타*/
+/* 태그를 사용하면 sapn을 쓰는 것 보다 코드를 깔끔하게 정리할 수 있습니다. 
+태그에도 스타일을 줘서 기본 속성(기울임, 진하게, 밑줄 등)을 변경할 수 있습니다.*/
+b {  /*굵은 글씨*/
+	font-weight : bold;	
+}
+
+em {
+	
+}
+
+strong {
+	
+}
+
+cite {
 	vertical-align : baseline;
+	font-size : 0.8em;	
+}
+
+blockquote {
+	margin : 1.5em 0 1.5em 1em;
 }
 
 /***************/
@@ -69,3 +124,5 @@ sup {
 	-webkit-box-pack: center;
 	-webkit-box-align: center;
 }
+
+/*Bullet Chapter Title*/
