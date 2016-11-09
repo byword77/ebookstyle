@@ -87,6 +87,30 @@ blockquote {
 	margin : 1.5em 0 1.5em 1em;
 }
 
+
+/*******************/
+/*고급 텍스트 스타일*/
+/*******************/
+
+
+/*텍스트 그라데이션 스타일*/
+/* HTML Code :
+<p class="txt_gradient">텍스트 그라데이션 스타일</p> */
+/*활용
+위에서 아래로 : background: -webkit-linear-gradient(#FF0000, #0000FF);
+왼쪽에서 오른쪽으로 : background: -webkit-linear-gradient(left, #FF0000, #0000FF);
+왼쪽 위에서 오른쪽 아래로 : background: -webkit-linear-gradient(left top, #FF0000, #0000FF); */
+
+.txt_gradient {
+	font-size : 1.2em;
+	background: -webkit-linear-gradient(#FF0000, #0000FF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color : #BD704A;
+	font-size : 5em;
+	margin-bottom : 1em;
+}
+
 /***************/
 /*Chapter Title*/
 /***************/
