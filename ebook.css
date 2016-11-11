@@ -111,6 +111,23 @@ blockquote {
 	margin-bottom : 1em;
 }
 
+/*문단 첫글자 큰글씨*/
+/*HTML Code :
+<p class="no_indent"><span class="firstLetter">내</span> 인생이 지극히 평범할 거란 사실을 받아들이기... </p>
+*/
+
+.firstLetter {
+	float : left;
+	font-size : 2.5em;
+	line-height : 1em;
+	padding : 5px;
+}
+
+.no_indent {
+	text-indent : 0;
+}
+
+
 /***************/
 /*Chapter Title*/
 /***************/
