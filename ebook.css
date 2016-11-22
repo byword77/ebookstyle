@@ -170,4 +170,41 @@ blockquote {
 	-webkit-box-align: center;
 }
 
-/*Bullet Chapter Title*/
+/******/
+/*표지*/
+/******/
+
+/*HTML Code
+<body>
+  <div class="cover"><img alt="표지 중앙정렬" class="cover" src="../Images/cover.png"/></div>*/
+/*주의
+html, body 태그 스타일은 HTML 파일의 <head>...</head>에 추가해야 전체 문서에 영향을 주지 않습니다. */
+
+html, body { height:100%; margin: 0; padding: 0; } /*내부 스타일로 삽입*/
+
+.cover {
+width: 100%;
+height : 100%;
+text-indent : 0;
+text-align : center;
+ 
+display: box;
+box-orient: horizontal;
+box-pack: center;
+box-align: center;
+ 
+display: -webkit-box;
+-webkit-box-orient: horizontal;
+-webkit-box-pack: center;
+-webkit-box-align: center;
+ 
+display: -moz-box;
+-moz-box-orient: horizontal;
+-moz-box-pack: center;
+-moz-box-align: center;
+}
+ 
+img.cover {
+width : 100%;
+height : auto;
+}
