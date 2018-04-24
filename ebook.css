@@ -36,6 +36,7 @@ p {
 <p>이 코드는 아랫첨자 설명<sub>(본문 글자보다 작은 글씨체로 글자의 아랫쪽에 정렬된 설명)</sub>의 예시입니다.</p> 
 */
 /*주의! 이 코드는 반드시 <p> 태그 등 부모 태그에 포함되야 합니다.*/
+
 sub {   /*아랫첨자 형태의 설명을 넣을 때 사용할 수있습니다.*/
 	vertical-align : baseline; /*10% 처럼 숫자를 사용할 수 있습니다. 숫자를 조절하면 세로 위 아래로 위치를 변경할 수 있습니다.*/
 	font-size : 0.8em;
@@ -49,6 +50,7 @@ sup {   /*윗첨자 형태의 설명을 넣을 때 사용할 수있습니다.*/
 /*글자 왼쪽, 가운데, 오른쪽 정렬*/
 /* HTML Code : 
 <p class="txt_center">text</p> */
+
 .txt_center { /*가운데 정렬 스타일*/
 	text-align : center;
 	text-indent : 0;
@@ -87,6 +89,10 @@ blockquote {
 	margin : 1.5em 0 1.5em 1em;
 }
 
+.txt_outdent {  /*글자 내어쓰기 스타일. padding과 text-indent를 수정하면 내어쓰기 깊이를 조절할 수 있다.*/
+	padding-left : 1em;
+	text-indent : -1em;
+}
 
 /*******************/
 /*고급 텍스트 스타일*/
